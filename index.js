@@ -12,7 +12,7 @@ $(function () {
         $("#content").append(`
         <div class="product-card">
             <div class="product-id">#${i.id}</div>
-            <img src=${i.thumbnail} />
+            <img src="${i.thumbnail}" alt="${i.title}"/>
             <h2 class="product-title">${i.title}</h2>
             <p class="product-desc">${i.description}</p>
 
@@ -25,6 +25,7 @@ $(function () {
       });
     },
     error: function (err) {
+      $("#loader").hide();
       const error = JSON.stringify(err);
       console.log(error);
       $("#content").append(`
