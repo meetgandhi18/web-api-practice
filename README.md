@@ -401,7 +401,3 @@ This exercise helped understand:
 - Importance of error handling in backend systems
 
 The DummyJSON API works well for learning but lacks strict validation rules that would normally be present in production systems.
-
-```
-
-```
